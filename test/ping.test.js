@@ -15,10 +15,5 @@ module.exports = (server, assert, dataTest, mongo) => {
           return done();
         });
     });
-
-    it('Connect Mongodb,Should Return 200', () => {
-      const result = mongo.connection.readyState;
-      assert.equal(result, 1);
-    });
   });
 };
