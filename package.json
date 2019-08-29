@@ -21,6 +21,7 @@
   "dependencies": {
     "@google-cloud/storage": "^1.7.0",
     "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
     "cuid": "^2.1.5",
     "dotenv": "^8.0.0",
     "express": "^4.16.4",

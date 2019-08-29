@@ -7,6 +7,7 @@ const enrouten = require('express-enrouten');
 const expressValidator = require('express-validator');
 const cuid = require('cuid');
 const config = require('../config');
+const cors = require('cors')
 
 const app = express();
 const port = config.get('PORT');
@@ -18,6 +19,7 @@ global.CustomStatusCode = require('./helpers/enum').customStatusCode;
 // require('../docs/swagger-docs')(app);
 
 app.use(expressValidator());
+app.use(cors())
 
 // Embedd RequestId
 app.use((req, res, next) => {
