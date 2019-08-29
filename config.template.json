@@ -1,0 +1,28 @@
+{
+  "SERVICE_NAME": "vinstore-server",
+  "PORT": "3000",
+
+  "MONGO_DB": "__MONGO_DB__",
+  "MONGO_DB_TEST": "__MONGO_DB_TEST__",
+
+  "swagger": {
+    "title": "vinstore-server",
+    "version": "1.0"
+  },
+  "GCLOUD_BUCKET": {
+    "BUCKET_NAME": "__BUCKET_NAME__",
+    "PROJECT_ID": "__PROJECT_ID__"
+  },
+  "MAILER_TRANSPORT": {
+    "host":"__host__",
+    "port": 465,
+    "secure": true,
+    "auth":{
+      "user": "__user__",
+      "pass": "__user__"
+    }
+  },
+  "KEYFILE_PATH": "keys/keyfile.json",
+  "LOG_DIR": "logs",
+  "JWT_SECRET_KEY": "__JWT_SECRET_KEY__"
+}

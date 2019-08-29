@@ -1,2 +1,1 @@
-# vinstore-server
-Server for vinstore
+This Skeleton Project Reference from fractal design pattern

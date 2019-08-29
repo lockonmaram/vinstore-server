@@ -1,0 +1,28 @@
+paths:
+  /:
+    get:
+      tags: [index]
+      description: Check server
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Connected to Express
+  /secret:
+    get:
+      tags: [index]
+      description: Access route with auth
+      produces:
+        - application/json
+      parameters:
+        - name: username
+          in: Basic Auth
+          description: Username needs to be added for authorization
+          required: true
+        - name: password
+          in: Basic Auth
+          description: password needs to be added for authorization
+          required: true
+      responses:
+        200:
+          description: Access granted
